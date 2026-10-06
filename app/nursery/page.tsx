@@ -22,7 +22,7 @@ export default async function Nursery() {
             <a href={dir} target="_blank" rel="noopener noreferrer" className="rounded-full bg-forest px-6 py-3 text-sm text-white">Get Directions</a>
             {wa && <a href={`https://wa.me/${wa}`} className="rounded-full border border-forest px-6 py-3 text-sm text-forest hover:bg-forest hover:text-white">WhatsApp us</a>}
           </div>
-          <h2 className="mt-10 font-serif text-2xl text-forest">What you'll find</h2>
+          <h2 className="mt-10 font-serif text-2xl text-forest">What you&apos;ll find</h2>
           <ul className="mt-3 flex flex-wrap gap-2">{cats.map((c) => <li key={c.slug}><Link href={`/shop/${c.slug}`} className="rounded-full bg-cream px-4 py-2 text-sm">{c.name}</Link></li>)}</ul>
           <h2 className="mt-10 font-serif text-2xl text-forest">Before you visit</h2>
           <p className="mt-2 text-sm leading-relaxed">Bring photos of your space and tell us how much light it gets. Our team can suggest plants and planters that suit it.</p>

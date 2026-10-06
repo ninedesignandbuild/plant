@@ -8,7 +8,7 @@ import BlogCard, { type Post } from "@/components/BlogCard";
 import { BlogPost } from "@/models/BlogPost";
 
 const cats = [["Indoor Plants", "indoor-plants"], ["Outdoor Plants", "outdoor-plants"], ["Succulents", "succulents"], ["Flowering Plants", "flowering-plants"], ["Pots & Planters", "planters"], ["Plant Care Products", "plant-care"]];
-const perks = [[Leaf, "Premium Quality Plants", "Healthy and well-cared for"], [Truck, "Safe & Fast Delivery", "Across Hyderabad & nearby areas"], [ShieldCheck, "Secure Payments", "UPI, Cards, Net Banking"], [Sprout, "Expert Guidance", "Plant care and maintenance tips"], [Headset, "Personalised Support", "We're here to help"]] as const;
+const perks = [[Leaf, "Premium Quality Plants", "Healthy and well-cared for"], [Truck, "Safe & Fast Delivery", "Across Hyderabad & nearby areas"], [ShieldCheck, "Secure Payments", "UPI, Cards, Net Banking"], [Sprout, "Expert Guidance", "Plant care and maintenance tips"], [Headset, "Personalised Support", "We&apos;re here to help"]] as const;
 const services = ["Landscape Design & Installation", "Indoor Plant Styling", "Garden Maintenance", "Corporate & Event Greenery", "Bulk Plant Orders"];
 const bg = (src: string) => ({ backgroundImage: `url(${src})` });
 const btn = "inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm transition";
