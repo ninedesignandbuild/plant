@@ -12,7 +12,7 @@ export default async function Customer({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   if (!isId(id)) notFound();
   await connectDB();
-  const u = await User.findById(id).select("name email phone createdAt").lean(); // password hash is never selected
+  const u = await User.findOne({ _id: id }).select("name email phone createdAt").lean(); // password hash is never selected
   if (!u) notFound();
   const orders: O[] = JSON.parse(JSON.stringify(await Order.find({ user: id }).sort({ createdAt: -1 }).limit(50).lean()));
   return (
